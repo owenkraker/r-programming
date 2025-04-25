@@ -1,0 +1,20 @@
+Package: DataViz
+Type: Package
+Title: Simplified Data Visualization
+Version: 0.0.0.9000
+Authors@R: person(given = "Owen", family = "Kraker", middle = "Thomas", 
+                  role = c("aut", "cre"), email = "owentkraker@gmail.com")
+Description: DataViz provides functions for creating statistical visualizations
+    using ggplot2. The package includes tools and functions for generating
+    customizable graphs such as histograms, bar graphs, scatter plots, and box
+    plots. The package makes data visualization and exploration easier.
+Depends: R (>= 3.1.2)
+Imports: ggplot2
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr

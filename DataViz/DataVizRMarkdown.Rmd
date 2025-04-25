@@ -1,0 +1,70 @@
+---
+title: "DataViz Package"
+author: "Owen Kraker"
+date: "2025-04-07"
+output: html_document
+---
+
+## Introduction
+The **DataViz** package is designed to simplify data visualization tasks using common statistical plotting methods. This document will provide an overview of the main functions within the package, explaining their purpose, inputs, outputs, and including examples.
+
+
+## Function 1: `create_histogram()`
+
+### Purpose:
+This function generates a customizable histogram to visualize the distribution of a numeric variable.
+
+### Inputs:
+- **data** (data frame): The dataset containing the variable to be plotted.
+- **x_var** (character): The name of the column to be used on the x-axis (the numeric variable for the histogram).
+- **bins** (numeric): The number of bins to use for the histogram. Default is 30.
+
+### Outputs:
+- **plot** (ggplot object): A histogram plot generated using `ggplot2`.
+
+### Example:
+
+```{r, eval=FALSE}
+create_histogram(data = mtcars, x_var = mpg, bins = 20) 
+
+```
+
+## Function 2: `create_barchart`
+
+### Purpose:
+This function generates a customizable barchart to visualize the data from certain variables in a dataset.
+
+### Inputs:
+- **data** (data frame): The dataset containing the variables to be plotted.
+- **x_var** (character): The name of the column to be used on the x-axis.
+- **y_var** (character): The name of the column to be used on the y-axis.
+
+### Outputs:
+- **plot** (ggplot object): A a bar chart generated using `ggplot2`.
+
+### Example:
+
+```{r, eval=FALSE}
+create_barchart(data = mtcars, x_var = car, y_var = mpg)
+```
+
+
+## Function 3: `create_scatterplot`
+
+### Purpose:
+This function generates a customizable scatter plot to visualize relationships between variables in a dataset.
+
+### Inputs:
+- **data** (data frame): The dataset containing the variables to be plotted.
+- **x_var** (character): The name of the column to be used on the x-axis.
+- **y_var** (character): The name of the column to be used on the y-axis.
+
+### Outputs:
+- **plot** (ggplot object): A a scatter plot generated using `ggplot2`.
+
+### Example:
+
+```{r, eval=FALSE}
+create_scatterplot(data = mtcars, x_var = mpg, y_var = hp)
+
+```
